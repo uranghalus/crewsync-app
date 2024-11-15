@@ -1,14 +1,29 @@
+import {
+    BookOpen,
+    Bot,
+    CircleGauge,
+    DatabaseIcon,
+    Frame,
+    Settings2,
+    SquareTerminal,
+} from "lucide-react";
+
 export const menu = {
     navMain: [
         {
-            title: "Playground",
+            title: "Dashboard",
+            url: "/dashboard",
+            icon: CircleGauge,
+        },
+        {
+            title: "Data Master",
             url: "#",
-            icon: SquareTerminal,
+            icon: DatabaseIcon,
             isActive: true,
             items: [
                 {
-                    title: "History",
-                    url: "#",
+                    title: "Departemen",
+                    url: "/master-data/department",
                 },
                 {
                     title: "Starred",
@@ -84,6 +99,11 @@ export const menu = {
                     url: "#",
                 },
             ],
+        },
+        {
+            title: "Design Engineering",
+            url: "#",
+            icon: Frame,
         },
     ],
 };
